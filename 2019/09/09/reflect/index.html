@@ -7,16 +7,17 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="kotlin, android, 设计模式">
-<meta property="og:type" content="website">
+  <meta name="description" content="反射Reflection[TOC] 通过反射，在运行时获取程序每一个类型的成员和成员的信息一般的对象类型在编译期就确定下来的，反射机制可以动态的创建对象并调用其属性；反射的核心: JVM在运行时才动态加载类或调用方法/访问属性，不需要事先知道运行对象是谁简单说，反射可以加载运行时才得知名称的.class文件，获悉完整结构，并生成对象实体，或对fields变量设值，或调用methods 获取Clas">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://nightjerry.github.io/index.html">
+<meta property="og:url" content="https://nightjerry.github.io/2019/09/09/reflect/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="kotlin, android, 设计模式">
+<meta property="og:description" content="反射Reflection[TOC] 通过反射，在运行时获取程序每一个类型的成员和成员的信息一般的对象类型在编译期就确定下来的，反射机制可以动态的创建对象并调用其属性；反射的核心: JVM在运行时才动态加载类或调用方法/访问属性，不需要事先知道运行对象是谁简单说，反射可以加载运行时才得知名称的.class文件，获悉完整结构，并生成对象实体，或对fields变量设值，或调用methods 获取Clas">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-10T07:38:09.724Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="kotlin, android, 设计模式">
+<meta name="twitter:description" content="反射Reflection[TOC] 通过反射，在运行时获取程序每一个类型的成员和成员的信息一般的对象类型在编译期就确定下来的，反射机制可以动态的创建对象并调用其属性；反射的核心: JVM在运行时才动态加载类或调用方法/访问属性，不需要事先知道运行对象是谁简单说，反射可以加载运行时才得知名称的.class文件，获悉完整结构，并生成对象实体，或对fields变量设值，或调用methods 获取Clas">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -63,132 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/11/07/hello/" class="article-date">
-  <time datetime="2019-11-07T02:59:43.000Z" itemprop="datePublished">2019-11-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/07/hello/">hello</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="fjasjfkj"><a href="#fjasjfkj" class="headerlink" title="fjasjfkj"></a>fjasjfkj</h2><h3 id="alfjsafk"><a href="#alfjsafk" class="headerlink" title="alfjsafk"></a>alfjsafk</h3><p>[TOC]</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://nightjerry.github.io/2019/11/07/hello/" data-id="ck2o4iy8s00019qtwgtryqkah" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-blog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/11/07/hello-blog/" class="article-date">
-  <time datetime="2019-11-07T02:16:18.000Z" itemprop="datePublished">2019-11-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/07/hello-blog/">hello blog</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="hello-blog"><a href="#hello-blog" class="headerlink" title="hello blog"></a>hello blog</h3><p>[TOC]</p>
-<h4 id="this-is-subtitle"><a href="#this-is-subtitle" class="headerlink" title="this is subtitle"></a>this is subtitle</h4>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://nightjerry.github.io/2019/11/07/hello-blog/" data-id="ck2o4iy8x00039qtw35fb3k7z" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/30/hello-world/" class="article-date">
-  <time datetime="2019-09-30T13:05:38.631Z" itemprop="datePublished">2019-09-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/30/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://nightjerry.github.io/2019/09/30/hello-world/" data-id="ck2o4iy8k00009qtwnlb2dcdp" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-reflect" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-reflect" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/09/09/reflect/" class="article-date">
   <time datetime="2019-09-09T06:40:09.998Z" itemprop="datePublished">2019-09-09</time>
@@ -274,11 +150,23 @@
     </footer>
   </div>
   
-</article>
-
+    
+<nav id="article-nav">
+  
+    <a href="/2019/09/30/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
   
-
+</article>
 
 </section>
         
